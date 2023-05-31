@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Charts</string>
+    <string name="add_sheet">Add new sheet</string>
+    <string name="add_chart">Add new chart</string>
+    <string name="func">f(x) = </string>
+</resources>

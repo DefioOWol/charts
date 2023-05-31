@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="270dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:background="@color/gray"
+    android:paddingHorizontal="50dp">
+
+    <ScrollView
+        android:id="@+id/rightScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:scrollbarSize="0dp"
+        android:layout_marginBottom="50dp"
+        tools:ignore="SpeakableTextPresentCheck,UselessParent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rightPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:ignore="UselessLeaf"/>
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addSheetButton"
+        android:layout_width="127dp"
+        android:layout_height="29dp"
+        android:background="@drawable/light_dash_stroke_btn"
+        android:text="@string/add_sheet"
+        android:textColor="@color/paper"
+        android:textSize="11sp"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rightScrollView"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

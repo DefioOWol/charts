@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="370dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dp"
+    android:background="@null">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/formulaField"
+        android:layout_width="305dp"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:hint="@string/func"
+        android:textColorHint="@color/hint"
+        android:paddingHorizontal="5dp"
+        android:textColor="@color/gray"
+        android:textSize="18sp"
+        android:scrollHorizontally="true"
+        android:maxLines="1"
+        android:inputType="textNoSuggestions"
+        tools:ignore="VisualLintTextFieldSize,SpeakableTextPresentCheck,TextContrastCheck"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/colorButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="8dp"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"/>
+
+</LinearLayout>
